@@ -1,8 +1,7 @@
 # DESN 378: Code + Design 2
 
-🔗 **[Learning Log](https://yourusername.github.io/this repo-name)**
-🔗 **[DESN368 Portfolio]([https://yourusername.github.io/desn368-portfolio-repo](https://landoncoddington.github.io/DESN368-code-design-workspace-f25/))** _FYI, this is just the URL to your repo; if it's still on Netlify, then use that. _
-
+🔗 **[Learning Log]([https://yourusername.github.io/this repo-name](https://landoncoddington.github.io/DESN-378-code-design-2/))**
+🔗 **[DESN368 Portfolio]([https://yourusername.github.io/desn368-portfolio-repo](https://landoncoddington.github.io/DESN368-code-design-workspace-f25/))** 
 ---
 
 ## About This Repository
