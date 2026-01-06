@@ -9,10 +9,10 @@ Update it once, keep it consistent everywhere.
 
 | Field | Value |
 |-------|-------|
-| **Name** | <!-- First Last --> |
-| **Preferred Name** | <!-- What should I call you? --> |
+| **Name** |Landon Coddington |
+| **Preferred Name** | Landon|
 | **Pronouns** | <!-- Optional --> |
-| **EWU Email** | <!-- @ewu.edu --> |
+| **EWU Email** | lcoddington1@ewu.edu |
 
 ---
 
@@ -22,7 +22,7 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `https://github.com/________` | ⏳ |
+| **GitHub** | `https://github.com/landoncoddington` | ⏳ |
 | **Figma** | `@________` | ⏳ |
 | **CodePen** | `https://codepen.io/________` | ⏳ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
