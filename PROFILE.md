@@ -23,17 +23,17 @@ Update it once, keep it consistent everywhere.
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
 | **GitHub** | `https://github.com/landoncoddington` | ⏳ |
-| **Figma** | `@________` | ⏳ |
-| **CodePen** | `https://codepen.io/________` | ⏳ |
+| **Figma** | `@landoncoddington` | ⏳ |
+| **CodePen** | `https://codepen.io/landoncoddington` | ⏳ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
 
 ---
 
 ## Profile Photo
 
-- [ ] Same photo uploaded to GitHub, Figma, and CodePen
-- [ ] Professional or at least *intentional*
-- [ ] Face visible (helps me learn names!)
+- [x] Same photo uploaded to GitHub, Figma, and CodePen
+- [x] Professional or at least *intentional*
+- [x] Face visible (helps me learn names!)
 
 ---
 
@@ -41,9 +41,9 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Applied/Renewed | ⏳ |
-| Copilot Access | ⏳ |
-| Expires | <!-- Date --> |
+| Applied/Renewed | ✅ |
+| Copilot Access | ✅ |
+| Expires | September 27, 2027 |
 
 👉 [Check status or renew](https://education.github.com/pack)
 
@@ -53,9 +53,9 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Education Plan Active | ⏳ |
-| Joined Course Team | ⏳ |
-| Expires | <!-- Date --> |
+| Education Plan Active | ✅ |
+| Joined Course Team | ❌ |
+| Expires | unsure- says verified though|
 
 👉 [Check status](https://www.figma.com/settings) → Plan
 
