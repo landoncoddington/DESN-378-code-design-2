@@ -13,17 +13,15 @@ myImage.addEventListener("click", () => {
   // this changes the source of the image based on what it currently is
   if (mySrc === "images/firefox-icon.png") {
 // changes the image to fox1.png
-    myImage.setAttribute("src", "images/fox1.png");
+    myImage.setAttribute("src", "images/fox1.jpg");
   } else {
     // changes the image to fox2.png
-    myImage.setAttribute("src", "images/fox2.png");
+    myImage.setAttribute("src", "images/fox2.jpg");
   }
 });
 
 // this code makes the button change the heading when clicked
 let myButton = document.querySelector("button");
-// listens for clicks on the button
-let myHeading = document.querySelector("h1");
 
 // function to set the user name
 function setUserName() {
@@ -52,3 +50,13 @@ myButton.addEventListener("click", () => {
 // calls the function to set a new user name
   setUserName();
 });
+
+
+/*
+  SUMMARY:
+  This file does two things:
+  1. On click the image will change between two pictures of my choice
+  2. The H1 on the top of the page will be custom based on the user of the page
+
+  The key pattern I learned: Using event listeners to respond to user interactions helps to personalize the web experience.
+*/

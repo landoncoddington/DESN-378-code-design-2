@@ -13,29 +13,42 @@ p, li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+  color: rgb(255, 255, 255);
 }
 
 
 html {
-  background-color: #00539F;
+  background-color: #282929;
 }
 
 body {
   width: 600px;
   margin: 0 auto;
-  background-color: #FF9500;
+  background-color: #6598aa;
   padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  border: 5px solid rgb(92, 80, 16);
 }
 
 h1 {
   margin: 0;
   padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
+  color: #cf4712;
+  text-shadow: 3px 3px 1px rgb(0, 0, 0);
 }
 
 img {
   display: block;
   margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1c1a81;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
