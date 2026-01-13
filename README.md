@@ -20,6 +20,41 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 ---
 
 ## Learning Log
+​
+## Week 0
+​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+I learned why the console is as important as it is, console.log() is able to communicate many things to the console.​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+what didnt make sense for me was during the greeting bot for the notes switching the name of the bot was super confusing for me at first but once I figured it out it all made sense to me.​
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+I used AI to explain to me what the const teacherBotLocation = 'I live in ' + teacherBotLocation + "."; was doing ​and what each piece of that is. It helped me to understand in a different way away from all the coding language the reading shared that information in.
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+I could probably use some more practice with all of the things i've learned so far but I think working with variables is what I need the most practice with.​
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [ ] Portfolio Audit
+​
+**Learn**
+- [x] Console Explorer
+- [x] Codedex Console Fundamentals
+​
+**Reflect**
+- [x] Visual Notes: Variables and Strings
+​
+**Build**
+- [x] The Setup
+- [x] The Behavioral Layer
+​
 
 Update this section each week with observations, breakthroughs, and questions.
 
