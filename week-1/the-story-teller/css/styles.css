@@ -23,7 +23,7 @@ body {
     color: #ecf0f1;
     margin: 0;
     padding: 20px;  
-    background-image: url('week-1/the-story-teller/assets/images/white-house.jpg');
+    background-image: url('/week-1/the-story-teller/assets/images/white-house.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
