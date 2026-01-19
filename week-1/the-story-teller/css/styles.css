@@ -40,4 +40,23 @@ body::before {
     background-color: rgba(44, 62, 80, 0.8); 
     z-index: -1; 
 }
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
     
+}
+
+.dot.active {
+    background-color: #373737;
+}
+
+.story-progress {
+    text-align: center;
+    margin: 20px 0;
+}
