@@ -2,7 +2,7 @@ const image = document.querySelector('.story-image img');
 const caption = document.querySelector('#story-caption');
 
 const captions = [
-  "Click the image to begin...",
+  "Click to explore the life of Dr. Martin Luther King Jr...",
   "Chapter 1: The beginning...",
   "Chapter 2: The journey...",
   "Chapter 3: The challenge...",
