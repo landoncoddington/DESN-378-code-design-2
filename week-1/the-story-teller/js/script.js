@@ -24,7 +24,7 @@ image.addEventListener('click', function() {
     caption.textContent = captions[currentStep];
 ​
     // Update image
-    image.src = `assets/images/image-${currentStep + 1}.jpg`;
+    image.src = `assets/image-${currentStep + 1}.jpg`;
 ​
     // Update progress dots
     updateProgress(currentStep);
