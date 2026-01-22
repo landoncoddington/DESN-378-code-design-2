@@ -59,17 +59,51 @@ I could probably use some more practice with all of the things i've learned so f
 Update this section each week with observations, breakthroughs, and questions.
 
 ### Week 1: Systems That Respond
-*Coming soon...*
+# Learning Log
+​
+## Week 1
+​
+### What I Learned
+I learned how to change my theme in VS code, HTML academy showed me the start of how we make the switcher between light mode and dark mode, I also learned how to make an image changes in a webpage.
+​
+​
+### What Was Hard
+The hardest thing for me was understanding the theme switcher on a webpage and how each of the JS lines are working together
+​
+​
+### How I Used AI
+I used AI to help me understand what each line of JS is doing in the theme switcher and how they work together, I copied and pasted the code into claude and asked for the code to be explained to me in 5th grader terms.
+​
+​
+### What's Still Unclear
+I need more practice with conditionals.
 
-### Week 2: Remembering Choices
-*Coming soon...*
+### Work Completed (Week 1)
 
----
+**Engage**
+- [x] VS Code Theme Setup
 
+**Learn**
+- [ ] Codedex.io Variables
+- [x] HTML Academy 
+
+**Practice**
+- [x] The Story Teller
+
+**Build**
+- [ ] Portfolio Migration
+- [x] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [x] Visual Notes: Week 1---
 ## Quick Links
 
 - [My Profile](PROFILE.md)
 - [Labs](labs/)
+​
+​
+### Week 2: Remembering Choices
+*Coming soon...*
 
 ---
 
