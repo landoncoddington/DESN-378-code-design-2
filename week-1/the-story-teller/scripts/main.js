@@ -14,11 +14,13 @@ let currentStep = 0;
 image.addEventListener('click', function() {
   currentStep++;
   
-  if (currentStep < captions.length) {
-    caption.textContent = captions[currentStep];
-    image.src = `assets/images/image-${currentStep + 1}.jpg`;
-    updateProgress(currentStep);
+  if (currentStep >= captions.length) {
+    currentStep = 0;
   }
+  
+  caption.textContent = captions[currentStep];
+  image.src = `assets/images/image-${currentStep + 1}.jpg`;
+  updateProgress(currentStep);
 });
 
 function updateProgress(step) {
@@ -30,4 +32,5 @@ function updateProgress(step) {
       dot.classList.remove('active');
     }
   });
+
 }
