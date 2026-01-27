@@ -42,7 +42,7 @@ I could probably use some more practice with all of the things i've learned so f
 ### Work Completed (Week 0)
 ​
 **Engage**
-- [ ] Portfolio Audit
+- [x] Portfolio Audit
 ​
 **Learn**
 - [x] Console Explorer
@@ -84,14 +84,14 @@ I need more practice with conditionals.
 - [x] VS Code Theme Setup
 
 **Learn**
-- [ ] Codedex.io Variables
+- [x] Codedex.io Variables
 - [x] HTML Academy 
 
 **Practice**
 - [x] The Story Teller
 
 **Build**
-- [ ] Portfolio Migration
+- [x] Portfolio Migration
 - [x] Portfolio in Figma + Style Tile
 
 **Reflect**
@@ -122,13 +122,13 @@ Im unsure why some JS uses === and some only =
 
 **Learn**
 - [x] Codedex.io Conditionals
-- [ ] figma variables
+- [ ] figma variables (still working on)
 
 **Practice**
-- [ ] The Switch
+- [x] The Switch
 
 **Build**
-- [ ] The Foundation
+- [ ] The Foundation (still working on)
 - [x] Portfolio in Figma + Style Tile
 
 **Reflect**
