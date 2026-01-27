@@ -103,9 +103,38 @@ I need more practice with conditionals.
 ​
 ​
 ### Week 2: Remembering Choices
-*Coming soon...*
-
+​
+### What I Learned
+A concept that clicked for me is the if statements, theyre much more logical than they were coming across in my head before.​
+​
+### What Was Hard
+Math.floor in the conditionals confused me.
+​
+​
+### How I Used AI
+I used AI to help me understand why my image clicker was not cycling back to the beginning of the story once the story was complete, claude helped me to understand that I only had code until I reached the last image and there was nothing to cycle it back to the beginning of the images with. ​
+​
+### What's Still Unclear
+Im unsure why some JS uses === and some only =
 ---
+**Engage**
+- [x] VS Code Theme Setup
+
+**Learn**
+- [x] Codedex.io Conditionals
+- [ ] figma variables
+
+**Practice**
+- [ ] The Switch
+
+**Build**
+- [ ] The Foundation
+- [x] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [x] Visual Notes: Week 2---
+
+
 
 ## Tools
 
