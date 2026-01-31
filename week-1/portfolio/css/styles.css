@@ -1,12 +1,50 @@
-    :root {
-      --bg: #000000;
-      --bg-card: #1a1a1a;
-      --text: #ffffff;
-      --text-muted: #a0a0a0;
-      --accent: #a62526;
-      --secondary: #255f7e;
-      --pop: #bfff00;
-    }
+    @import "variables.css";
+    
+    
+/* Default (light mode) */
+:root {
+  --brand-primary-20: #a62526;
+  --brand-accent-50: #255f7e;
+  --brand-secondary-50: #bfff00;
+
+  --neutrals-neutral-00: #3c3a3a;
+  --neutrals-neutral-10: #9a9a9a;
+  --neutrals-neutral-90: #000000;
+
+  --primary-50: #a62526;
+  --bg-50: #9a9a9a;
+  --bg-80: #3c3a3a;
+
+  --primary: #000000;
+  --secondary: #bfff00;
+  --muted: #a62526;
+
+  --color: #bfff00;
+
+  --font-family-font-family: 'Bebas Neue';
+  --font-family-font-family-secondary: 'Raleway';
+  --font-size-s: 16px;
+  --font-size-m: 24px;
+  --font-size-l: 32px;
+  --font-size-xl: 40px;
+}
+
+/* Dark mode variables */
+body.dark {
+  --neutrals-neutral-00: #000000;
+  --neutrals-neutral-10: #1e1e1e;
+  --neutrals-neutral-90: #ffffff;
+
+  --primary-50: #a62526;
+  --bg-50: #1e1e1e;
+  --bg-80: #000000;
+
+  --primary: #ffffff;
+  --secondary: #bfff00;
+  --muted: #a0a0a0;
+}
+
+
 
     * {
       margin: 0;
@@ -15,12 +53,13 @@
     }
 
     body {
-      font-family: 'Raleway', sans-serif;
+      font-family: var(--font-primary), sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
       overflow-x: hidden;
     }
+
 
     /* Navigation */
     nav {
@@ -38,7 +77,7 @@
     }
 
     nav .logo {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display), sans-serif;
       font-size: 1.5rem;
       letter-spacing: 2px;
       color: var(--pop);
@@ -60,24 +99,21 @@
       transition: color 0.3s;
     }
 
-    nav a:hover {
-      color: var(--accent);
-      a:link {
+nav a {
   color: var(--text);
 }
 
-a:visited {
+nav a:visited {
   color: var(--text-muted);
 }
 
-a:hover {
+nav a:hover {
   color: var(--accent);
 }
 
-a:active {
+nav a:active {
   color: var(--pop);
 }
-    }
 
     /* Hero Section */
     .hero {
@@ -97,7 +133,7 @@ a:active {
     }
 
     .hero h1 {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display), sans-serif;
       font-size: clamp(3rem, 10vw, 8rem);
       letter-spacing: 8px;
       margin-bottom: 1rem;
@@ -165,7 +201,7 @@ a:active {
     }
 
     .about-content h2 {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display), sans-serif;
       font-size: clamp(2.5rem, 5vw, 4rem);
       letter-spacing: 4px;
       margin-bottom: 1.5rem;
@@ -203,7 +239,7 @@ a:active {
     }
 
     .projects h2 {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display), sans-serif;
       font-size: clamp(2.5rem, 5vw, 4rem);
       letter-spacing: 4px;
       text-align: center;
@@ -274,7 +310,7 @@ a:active {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display), sans-serif;
       font-size: 1.5rem;
       letter-spacing: 3px;
       color: var(--text);
@@ -308,7 +344,7 @@ a:active {
     }
 
     .project-info h3 {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display), sans-serif;
       font-size: 1.8rem;
       letter-spacing: 2px;
       margin-bottom: 1rem;

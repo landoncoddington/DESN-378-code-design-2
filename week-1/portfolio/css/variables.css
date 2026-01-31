@@ -1,0 +1,54 @@
+/* =========================
+   BRAND COLORS — DARK MODE
+========================= */
+:root {
+  --brand-primary-20: #a62526;
+  --brand-accent-50: #255f7e;
+  --brand-secondary-50: #bfff00;
+
+  --neutrals-neutral-00: #000000;
+  --neutrals-neutral-10: #1e1e1e;
+  --neutrals-neutral-90: #ffffff;
+}
+
+/* =========================
+   COLORS — DARK MODE
+========================= */
+:root {
+  --primary-50: #a62526;
+  --bg-50: #1e1e1e;
+  --bg-80: #000000;
+}
+
+/* =========================
+   TEXT COLORS — DARK MODE
+========================= */
+:root {
+  --primary: #ffffff;
+  --secondary: #bfff00;
+  --muted: #a0a0a0;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+:root {
+  --font-family-font-family: "Bebas Neue";
+  --font-family-font-family-secondary: "Raleway";
+
+  --font-size-s: 16px;
+  --font-size-m: 24px;
+  --font-size-l: 32px;
+  --font-size-xl: 40px;
+}
+
+/* =========================
+   SPACING SCALE
+========================= */
+:root {
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 2rem;
+  --space-l: 4rem;
+  --space-xl: 8rem;
+}
