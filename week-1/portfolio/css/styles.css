@@ -1,49 +1,49 @@
-    @import "variables.css";
+@import "variables.css";
     
     
-/* Default (light mode) */
+/* =============================
+   LIGHT MODE (default)
+   ============================= */
 :root {
-  --brand-primary-20: #a62526;
-  --brand-accent-50: #255f7e;
+  --brand-primary-20: #a62526;  
+  --brand-accent-50: #255f7e;  
   --brand-secondary-50: #bfff00;
 
   --neutrals-neutral-00: #3c3a3a;
   --neutrals-neutral-10: #9a9a9a;
   --neutrals-neutral-90: #000000;
-
   --primary-50: #a62526;
-  --bg-50: #9a9a9a;
-  --bg-80: #3c3a3a;
 
-  --primary: #000000;
-  --secondary: #bfff00;
-  --muted: #a62526;
+  --bg: var(--neutrals-neutral-10);        /* mid gray background */
+  --bg-card: var(--neutrals-neutral-00);   /* dark gray card background */
+  --text: var(--neutrals-neutral-90);      /* black text */
+  --text-muted: #5a5a5a;                   /* neutral gray for body text */
+  --accent: var(--brand-accent-50);        /* blue */
+  --pop: var(--brand-secondary-50);        /* yellow-green */
 
-  --color: #bfff00;
-
-  --font-family-font-family: 'Bebas Neue';
-  --font-family-font-family-secondary: 'Raleway';
-  --font-size-s: 16px;
-  --font-size-m: 24px;
-  --font-size-l: 32px;
-  --font-size-xl: 40px;
+  --font-primary: var(--font-family-font-family-secondary);
+  --font-display: var(--font-family-font-family);
 }
 
-/* Dark mode variables */
+/* =============================
+   DARK MODE
+   ============================= */
 body.dark {
   --neutrals-neutral-00: #000000;
   --neutrals-neutral-10: #1e1e1e;
   --neutrals-neutral-90: #ffffff;
-
   --primary-50: #a62526;
-  --bg-50: #1e1e1e;
-  --bg-80: #000000;
 
-  --primary: #ffffff;
-  --secondary: #bfff00;
-  --muted: #a0a0a0;
+  --bg: var(--neutrals-neutral-10);        /* dark gray background */
+  --bg-card: var(--neutrals-neutral-00);   /* black card background */
+  --text: var(--neutrals-neutral-90);      /* white text */
+  --text-muted: #a0a0a0;                   /* neutral gray for body text */
+  --accent: var(--brand-accent-50);        /* blue */
+  --pop: var(--brand-secondary-50);        /* yellow-green */
+
+  --font-primary: var(--font-family-font-family-secondary);
+  --font-display: var(--font-family-font-family);
 }
-
 
 
     * {
@@ -58,10 +58,11 @@ body.dark {
       color: var(--text);
       line-height: 1.6;
       overflow-x: hidden;
+      transition: background 0.4s ease, color 0.4s ease;
     }
 
 
-    /* Navigation */
+    /* Navigation — always dark */
     nav {
       position: fixed;
       top: 0;
@@ -87,10 +88,12 @@ body.dark {
       display: flex;
       gap: 2rem;
       list-style: none;
+      align-items: center;
     }
 
+    /* Nav links are always white because nav bg is always dark */
     nav a {
-      color: var(--text);
+      color: #ffffff;
       text-decoration: none;
       font-weight: 300;
       text-transform: uppercase;
@@ -99,20 +102,59 @@ body.dark {
       transition: color 0.3s;
     }
 
-nav a {
-  color: var(--text);
+    nav a:visited {
+      color: #cccccc;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    nav a:active {
+      color: var(--pop);
+    }
+
+    /* Toggle Button */
+/* Toggle Pill */
+.toggle {
+  width: 44px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  font-size: 0;
+  color: transparent;
+  transition: background 0.3s ease;
 }
 
-nav a:visited {
-  color: var(--text-muted);
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-nav a:hover {
-  color: var(--accent);
+.toggle:hover {
+  background: rgba(255, 255, 255, 0.35);
 }
 
-nav a:active {
-  color: var(--pop);
+body.dark .toggle {
+  background: var(--brand-secondary-50);
+}
+
+body.dark .toggle::after {
+  transform: translateX(20px);
+}
+
+body.dark .toggle:hover {
+  background: #d4e600;
 }
 
     /* Hero Section */
@@ -130,6 +172,7 @@ nav a:active {
         var(--bg);
       position: relative;
       margin-top: 70px;
+      transition: background 0.4s ease;
     }
 
     .hero h1 {
@@ -155,18 +198,19 @@ nav a:active {
     .hero .cta {
       display: inline-block;
       padding: 1rem 3rem;
-      background: var(--accent);
-      color: var(--text);
+      background: var(--brand-primary-20);
+      color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 700;
       transition: all 0.3s;
-      border: 2px solid var(--accent);
+      border: 2px solid var(--brand-primary-20);
     }
 
     .hero .cta:hover {
       background: transparent;
+      color: var(--brand-primary-20);
       box-shadow: 0 0 30px rgba(166, 37, 38, 0.6);
       transform: translateY(-3px);
     }
@@ -189,6 +233,7 @@ nav a:active {
       position: relative;
       overflow: hidden;
       line-height: 0;
+      transition: border-color 0.4s ease;
     }
 
     .about-img img {
@@ -236,6 +281,7 @@ nav a:active {
     .projects {
       padding: 8rem 5%;
       background: var(--bg-card);
+      transition: background 0.4s ease;
     }
 
     .projects h2 {
@@ -313,7 +359,7 @@ nav a:active {
       font-family: var(--font-display), sans-serif;
       font-size: 1.5rem;
       letter-spacing: 3px;
-      color: var(--text);
+      color: #ffffff;
       opacity: 0;
       transition: opacity 0.3s;
       z-index: 2;
@@ -359,7 +405,7 @@ nav a:active {
     }
 
     .project-link {
-      color: var(--accent);
+      color: var(--brand-primary-20);
       text-decoration: none;
       text-transform: uppercase;
       font-size: 0.9rem;
@@ -382,6 +428,7 @@ nav a:active {
       background: var(--bg);
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       text-align: center;
+      transition: background 0.4s ease;
     }
 
     .social-links {

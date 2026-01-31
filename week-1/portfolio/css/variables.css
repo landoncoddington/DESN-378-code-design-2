@@ -1,32 +1,32 @@
 /* =========================
-   BRAND COLORS — DARK MODE
+   BRAND COLORS — SHARED
 ========================= */
 :root {
   --brand-primary-20: #a62526;
   --brand-accent-50: #255f7e;
   --brand-secondary-50: #bfff00;
-
-  --neutrals-neutral-00: #000000;
-  --neutrals-neutral-10: #1e1e1e;
-  --neutrals-neutral-90: #ffffff;
 }
 
 /* =========================
-   COLORS — DARK MODE
+   COLORS — LIGHT MODE (default)
 ========================= */
 :root {
+  --neutrals-neutral-00: #3c3a3a;
+  --neutrals-neutral-10: #9a9a9a;
+  --neutrals-neutral-90: #000000;
+
   --primary-50: #a62526;
-  --bg-50: #1e1e1e;
-  --bg-80: #000000;
+  --bg-50: #9a9a9a;
+  --bg-80: #3c3a3a;
 }
 
 /* =========================
-   TEXT COLORS — DARK MODE
+   TEXT COLORS — LIGHT MODE (default)
 ========================= */
 :root {
-  --primary: #ffffff;
-  --secondary: #bfff00;
-  --muted: #a0a0a0;
+  --primary: #000000;
+  --secondary: #a62526;
+  --muted: #a62526;
 }
 
 /* =========================
