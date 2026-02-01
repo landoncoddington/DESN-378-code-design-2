@@ -1,11 +1,15 @@
-
+/* =========================
+   BRAND COLORS — SHARED
+========================= */
 :root {
   --brand-primary-20: #a62526;
   --brand-accent-50: #255f7e;
   --brand-secondary-50: #bfff00;
 }
 
-
+/* =========================
+   COLORS — LIGHT MODE (default)
+========================= */
 :root {
   --neutrals-neutral-00: #3c3a3a;
   --neutrals-neutral-10: #9a9a9a;
@@ -16,14 +20,18 @@
   --bg-80: #3c3a3a;
 }
 
-
+/* =========================
+   TEXT COLORS — LIGHT MODE (default)
+========================= */
 :root {
   --primary: #000000;
   --secondary: #a62526;
   --muted: #a62526;
 }
 
-
+/* =========================
+   TYPOGRAPHY
+========================= */
 :root {
   --font-family-font-family: "Bebas Neue";
   --font-family-font-family-secondary: "Raleway";
@@ -34,7 +42,9 @@
   --font-size-xl: 40px;
 }
 
-
+/* =========================
+   SPACING SCALE
+========================= */
 :root {
   --space-xs: 0.5rem;
   --space-s: 1rem;
