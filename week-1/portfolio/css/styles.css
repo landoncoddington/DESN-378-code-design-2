@@ -459,7 +459,15 @@ body.dark .toggle:hover {
       color: var(--pop);
       text-decoration: none;
     }
-    
+    /* i chose to do the refined approach because I am a fan of animations, my site doesnt have a ton of animations just a few suttle ones but I'd rather not remove them from my design completely*/
+    @media (prefers-reduced-motion: reduce) {
+        .fade-in,
+        .slide-up,
+        .theme-transition {
+            transition: none;
+            animation: none;
+        }
+    }
 
     /* Responsive */
     @media (max-width: 768px) {
