@@ -460,33 +460,7 @@ body.dark .toggle:hover {
       text-decoration: none;
     }
     
-    @media (prefers-reduced-motion: reduce) {
-      body,
-      .hero,
-      .projects,
-      footer,
-      .about-img,
-      .hero .cta,
-      .project-card,
-      .project-img::before,
-      .project-img::after,
-      .project-link,
-      .social-links a,
-      nav a,
-      .toggle,
-      .toggle::before,
-      .toggle::after {
-        transition: none !important;
-      }
 
-      .project-card:hover {
-        transform: none;
-      }
-
-      .hero .cta:hover {
-        transform: none;
-      }
-    }
     /* Responsive */
     @media (max-width: 768px) {
       nav ul {
