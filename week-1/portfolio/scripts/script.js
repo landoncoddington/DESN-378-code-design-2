@@ -17,11 +17,9 @@ toggle.addEventListener ('click', function () {
   if (currentTheme === 'dark') {
     newTheme = 'light' ;
   } else {
-    newTheme = 'dark' ;
+    document.body.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
   }
-
-  document.documentElement.dataset.theme = newTheme;
-  localStorage.setItem('theme', newTheme);
 });
 
 
