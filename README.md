@@ -122,17 +122,60 @@ Im unsure why some JS uses === and some only =
 
 **Learn**
 - [x] Codedex.io Conditionals
-- [ ] figma variables (still working on)
+- [x] figma variables 
 
 **Practice**
 - [x] The Switch
 
 **Build**
-- [ ] The Foundation (still working on)
+- [x] The Foundation 
 - [x] Portfolio in Figma + Style Tile
 
 **Reflect**
 - [x] Visual Notes: Week 2---
+
+
+# Learning Log
+​
+## Week 
+​
+### What I Learned
+I learned how to create a theme toggle to switch my site between light and dark mode as well as how to incorporate variables into my css to make maintaining my site simpler.
+​
+​
+### What Was Hard
+Adding the variables to my site broke my site for a little bit, some of my values were hard coded and/or duplicated variables, after some conversation with ChatGPT I was able to figure out where in my code I was doing it wrong and how to get some of my variables that I had from my original portfolio assignment from web1 to work together withing my new variables made from figma
+​
+​
+### How I Used AI
+I used Ai to explain the new concepts to me such as the memory and how to use variable properly, I also used AI to debug my site when my code wasnt working the way that I had intended it to.
+​
+​
+### What's Still Unclear
+I'm not sure what the best order to go in while using variables is, do I start by making my variables and then designing my layout and pages in figma or do I design my pages first and then make the variables?
+​
+​
+### Work Completed (Week 3)
+
+**Design Tokens**
+- [x] variables.css exists
+- [x] Color tokens defined
+- [x] Typography tokens defined
+- [ ] Spacing tokens defined
+- [x] Tokens used in CSS (no hardcoded values)
+
+**Theme System**
+- [x] Uses data-theme on <html>
+- [x] Toggle feedback is immediate
+
+**Persistence & Preference**
+- [x] Theme saved to localStorage
+- [x] Theme persists on refresh
+- [x] System preference used on first visit
+
+**Deployment**
+- [x] Deployed to GitHub Pages
+- [x] Repository is public
 
 
 
