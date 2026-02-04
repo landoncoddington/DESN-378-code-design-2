@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landon Coddington - Portfolio</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles: variables.css MUST load first -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/styles.css">
-  	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-<link rel="shortcut icon" href="favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-<link rel="manifest" href="favicon/site.webmanifest" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 
 <body>
@@ -24,9 +31,32 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://landoncoddington.github.io/DESN368-code-design-workspace-f25/learning-log.html">Log</a></li>
-       <button class="toggle">Toggle Theme</button>
+      <li>
+        <!-- Theme Toggle: Light | Dark | System -->
+        <div class="theme-controls">
+          <button 
+            class="theme-btn" 
+            data-theme-toggle="light"
+            aria-label="Light mode">
+            Light
+          </button>
+          <button 
+            class="theme-btn" 
+            data-theme-toggle="dark"
+            aria-label="Dark mode">
+            Dark
+          </button>
+          <button 
+            class="theme-btn" 
+            data-theme-toggle="system"
+            aria-label="System mode">
+            Auto
+          </button>
+        </div>
+      </li>
     </ul>
   </nav>
+
   <section class="hero">
     <h1>Landon Coddington</h1>
     <p class="tagline">VCD Student</p>
@@ -35,7 +65,7 @@
 
   <section class="about" id="about">
     <div class="about-img">
-      <img src="assets/landon.png" alt="Landon">
+      <img src="assets/landon.png" alt="Landon Coddington">
     </div>
     <div class="about-content">
       <h2>About Me</h2>
@@ -47,7 +77,9 @@
     <h2>Featured Projects</h2>
     <div class="projects-grid">
       <article class="project-card">
-        <div class="project-img"><img src="assets/recipe.png" alt="screenshot of recipe-site"></div>
+        <div class="project-img">
+          <img src="assets/recipe.png" alt="Interactive recipe site with modern layout">
+        </div>
         <div class="project-info">
           <h3>The Recipe</h3>
           <p>An interactive recipe site showcasing modern layout techniques and responsive design. Built with semantic HTML and CSS.</p>
@@ -56,7 +88,9 @@
       </article>
 
       <article class="project-card">
-        <div class="project-img"><img src="assets/mac-miller.png" alt=" screenshot of tribute site"></div>
+        <div class="project-img">
+          <img src="assets/mac-miller.png" alt="Biographical tribute page">
+        </div>
         <div class="project-info">
           <h3>Tribute Site</h3>
           <p>A biographical tribute page demonstrating typography hierarchy and image optimization.</p>
@@ -65,7 +99,9 @@
       </article>
 
       <article class="project-card">
-        <div class="project-img"><img src="assets/field-guide.png" alt=" screenshot of field guide"></div>
+        <div class="project-img">
+          <img src="assets/field-guide.png" alt="Educational resource with filterable content">
+        </div>
         <div class="project-info">
           <h3>Field Guide</h3>
           <p>An educational resource with filterable content and interactive elements. Built with CSS Grid.</p>
@@ -74,7 +110,9 @@
       </article>
 
       <article class="project-card">
-        <div class="project-img"><img src="assets/adrift.png" alt="screen shot of Product Landing Page"></div>
+        <div class="project-img">
+          <img src="assets/adrift.png" alt="Product landing page with smooth scrolling">
+        </div>
         <div class="project-info">
           <h3>Product Landing</h3>
           <p>A conversion-focused landing page with smooth scrolling sections and form validation. Optimized for mobile-first experiences.</p>
@@ -83,6 +121,7 @@
       </article>
     </div>
   </section>
+
   <footer id="contact">
     <div class="social-links">
       <a href="https://github.com/landoncoddington" target="_blank" title="GitHub">GitHub</a>
@@ -92,6 +131,7 @@
     <p>&copy; 2025 Landon Coddington. Built for DESN368 at Eastern Washington University. | Co-created with Claude</p>
     <p><a href="https://landoncoddington.github.io/DESN368-code-design-workspace-f25/reflection.html">View Reflection</a></p>
   </footer>
-<script src="scripts/script.js"></script>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>

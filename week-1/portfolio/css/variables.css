@@ -1,36 +1,48 @@
-/* =========================
-   BRAND COLORS — SHARED
-========================= */
+/* =============================
+   LIGHT MODE (default)
+   ============================= */
 :root {
-  --brand-primary-20: #a62526;
-  --brand-accent-50: #255f7e;
+  --brand-primary-20: #a62526;  
+  --brand-accent-50: #255f7e;  
   --brand-secondary-50: #bfff00;
-}
 
-/* =========================
-   COLORS — LIGHT MODE (default)
-========================= */
-:root {
   --neutrals-neutral-00: #3c3a3a;
   --neutrals-neutral-10: #9a9a9a;
   --neutrals-neutral-90: #000000;
-
   --primary-50: #a62526;
-  --bg-50: #9a9a9a;
-  --bg-80: #3c3a3a;
+
+  --bg: var(--neutrals-neutral-10);        /* mid gray background */
+  --bg-card: var(--neutrals-neutral-00);   /* dark gray card background */
+  --text: var(--neutrals-neutral-90);      /* black text */
+  --text-muted: #5a5a5a;                   /* neutral gray for body text */
+  --accent: var(--brand-accent-50);        /* blue */
+  --pop: var(--brand-secondary-50);        /* yellow-green */
+
+  --font-primary: var(--font-family-font-family-secondary);
+  --font-display: var(--font-family-font-family);
 }
 
-/* =========================
-   TEXT COLORS — LIGHT MODE (default)
-========================= */
-:root {
-  --primary: #000000;
-  --secondary: #a62526;
-  --muted: #a62526;
-}
+/* =============================
+   DARK MODE
+   ============================= */
+[data-theme="dark"] {
+  --neutrals-neutral-00: #000000;
+  --neutrals-neutral-10: #1e1e1e;
+  --neutrals-neutral-90: #ffffff;
+  --primary-50: #a62526;
 
+  --bg: var(--neutrals-neutral-10);        /* dark gray background */
+  --bg-card: var(--neutrals-neutral-00);   /* black card background */
+  --text: var(--neutrals-neutral-90);      /* white text */
+  --text-muted: #a0a0a0;                   /* neutral gray for body text */
+  --accent: var(--brand-accent-50);        /* blue */
+  --pop: var(--brand-secondary-50);        /* yellow-green */
+
+  --font-primary: var(--font-family-font-family-secondary);
+  --font-display: var(--font-family-font-family);
+}
 /* =========================
-   TYPOGRAPHY
+   TYPOGRAPHY VARIABLES
 ========================= */
 :root {
   --font-family-font-family: "Bebas Neue";
