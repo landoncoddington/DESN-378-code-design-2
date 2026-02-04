@@ -99,7 +99,7 @@ Users with `prefers-reduced-motion` enabled will see:
 
 ## 🚀 Deployment
 
-Live site: [Your GitHub Pages URL here]
+Live site: [(https://landoncoddington.github.io/DESN-378-code-design-2/week-1/portfolio/)]
 
 Repository: [(https://github.com/landoncoddington/DESN-378-code-design-2)]
 
