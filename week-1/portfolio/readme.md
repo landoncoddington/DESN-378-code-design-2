@@ -101,7 +101,7 @@ Users with `prefers-reduced-motion` enabled will see:
 
 Live site: [Your GitHub Pages URL here]
 
-Repository: [Your GitHub repo URL here]
+Repository: [(https://github.com/landoncoddington/DESN-378-code-design-2)]
 
 ## 📄 License
 
