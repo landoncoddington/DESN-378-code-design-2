@@ -32,26 +32,34 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://landoncoddington.github.io/DESN368-code-design-workspace-f25/learning-log.html">Log</a></li>
       <li>
-        <!-- Theme Toggle: Light | Dark | System -->
-        <div class="theme-controls">
-          <button 
-            class="theme-btn" 
-            data-theme-toggle="light"
-            aria-label="Light mode">
-            Light
+        <div class="dropdown">
+          <button class="dropbtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="8"/>
+            </svg>
           </button>
-          <button 
-            class="theme-btn" 
-            data-theme-toggle="dark"
-            aria-label="Dark mode">
-            Dark
-          </button>
-          <button 
-            class="theme-btn" 
-            data-theme-toggle="system"
-            aria-label="System mode">
-            Auto
-          </button>
+          
+          <div class="dropdown-content">
+            <a href="#" data-theme="system">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/>
+                <path d="M 12 4 A 8 8 0 0 1 12 20 Z" fill="currentColor"/>
+              </svg>
+              <span>System</span>
+            </a>
+            <a href="#" data-theme="light">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="8"/>
+              </svg>
+              <span>Light</span>
+            </a>
+            <a href="#" data-theme="dark">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="12" r="8"/>
+              </svg>
+              <span>Dark</span>
+            </a>
+          </div>
         </div>
       </li>
     </ul>

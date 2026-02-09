@@ -1,4 +1,4 @@
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -67,43 +67,89 @@
     }
 
  
-/* Theme Toggle Buttons */
-.theme-controls {
-  display: flex;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.25rem;
-  border-radius: 8px;
+/* =============================
+   DROPDOWN MENU
+   ============================= */
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.theme-btn {
-  padding: 0.5rem 1rem;
-  background: transparent;
-  border: none;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: var(--font-primary), sans-serif;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* Dropdown button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
-.theme-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+.dropbtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
-.theme-btn.active {
-  background: var(--brand-secondary-50);
-  color: #000000;
-  font-weight: 700;
-}
-
-.theme-btn:focus {
+.dropbtn:focus {
   outline: 2px solid var(--brand-secondary-50);
   outline-offset: 2px;
+}
+
+/* Size all SVG icons */
+.dropdown svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  z-index: 1001;
+  top: calc(100% + 8px);
+  right: 0;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* Show dropdown when open */
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Active state */
+.dropdown-content a.active {
+  font-weight: 700;
+  background-color: var(--brand-secondary-50);
+  color: #000000;
 }
     /* Hero Section */
     .hero {
