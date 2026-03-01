@@ -1,0 +1,41 @@
+:root {
+  /* =========================
+     COLORS
+  ========================== */
+
+  --color-surface-primary: #1a1a2e;
+  --color-text-primary: #f5f5f0;
+
+  --color-accent-primary: #1a5c2a;
+  --color-accent-highlight: #e8c843;
+  --color-accent-emphasis: #c0392b;
+
+
+  /* =========================
+     SPACING (8pt scale)
+  ========================== */
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+
+  /* =========================
+     TYPOGRAPHY
+  ========================== */
+
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-body-lg: 16px;
+  --font-size-body-sm: 14px;
+
+  --line-height-h1: 72px;
+  --line-height-h2: 56px;
+  --line-height-body-lg: 24px;
+  --line-height-body-sm: 20px;
+}

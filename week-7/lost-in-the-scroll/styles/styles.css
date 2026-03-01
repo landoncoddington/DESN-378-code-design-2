@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: var(--color-surface-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+.section {
+  min-height: 100svh;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.section__content {
+  width: min(72rem, 100%);
+  margin-inline: auto;
+}
+
+
+a {
+  transition: color 0.2s ease-out;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
