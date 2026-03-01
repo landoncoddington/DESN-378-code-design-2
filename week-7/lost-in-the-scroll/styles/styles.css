@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 body {
   margin: 0;
   background: var(--color-surface-primary);
@@ -27,4 +29,17 @@ a:hover {
 a:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-body-lg);
+  color: var(--color-text-primary);
+  background: var(--color-surface-primary);
+}
+
+section {
+  padding: 120px 0;
 }
