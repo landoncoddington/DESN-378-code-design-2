@@ -1,15 +1,151 @@
-<main>
-  <section class="section--hero" id="hero">
-    <div class="section__content">
-      <h1>Story title</h1>
-      <p>Hero hook text...</p>
-    </div>
-  </section>
 
-  <section class="section--chapter" id="first-contact">
-    <div class="section__content">
-      <h2>First chapter title</h2>
-      <p>Real story content...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost in the Scroll — JavaScript Through Football</title>
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+  <main>
+<!-- ===================== HERO / KICKOFF ===================== -->
+<section class="hero" id="hero">
+
+  <div class="hero__layer hero__bg"></div>
+  <div class="hero__layer hero__mid"></div>
+  <div class="hero__layer hero__front"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content">
+    <h1>Learning JavaScript Felt Like Walking Onto a Soccer Field</h1>
+    <p>At first, I didn't even know where the field was...</p>
+
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span>Scroll to kick off</span>
+      <div class="hero__scroll-arrow">↓</div>
     </div>
-  </section>
-</main>
+  </div>
+
+</section>
+    <!-- ===================== CHAPTER 1: KICKOFF ===================== -->
+    <section class="section section--chapter section--dark" id="kickoff">
+      <div class="section__content">
+        <p class="section__label">Chapter 1</p>
+        <h2>Kickoff</h2>
+        <p class="section__metaphor">
+          <em>You're in the tunnel beneath the stadium. It's deafening up there. The match is about to start and you haven't trained a day in your life.</em>
+        </p>
+        <p>
+          That's what opening a JavaScript file feels like the first time. The browser is the stadium — massive, alive, reacting to everything. You're the player who just walked in from the stands.
+        </p>
+        <p>
+          I had no idea what JavaScript was or why it mattered. The page just sat there — I was watching from the stands, not playing.
+        </p>
+        <div class="chapter__concept">
+          <span class="concept__tag">JS Concept</span>
+          <p>The browser is a living environment. JavaScript is how you participate in it — not just watch it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAPTER 2: FIRST TOUCH ===================== -->
+    <section class="section section--chapter section--mid" id="first-contact">
+      <div class="section__content">
+        <p class="section__label">Chapter 2</p>
+        <h2>First Touch</h2>
+        <p class="section__metaphor">
+          <em>The referee blows the whistle. You touch the ball for the first time. You don't control it — it responds. It does.</em>
+        </p>
+        <p>
+          The moment I typed <code>console.log("hello")</code> and saw it appear in DevTools, something shifted. The browser talked back. That first touch — that feedback loop — changed everything.
+        </p>
+        <p>
+          Everything changed when the browser responded. Before, I kept trying to figure it out by staring at it. I could ask questions and get answers.
+        </p>
+        <div class="chapter__concept">
+          <span class="concept__tag">JS Concept</span>
+          <p><code>console.log</code> · DevTools — Your first line of communication with the machine. It listens. Use it constantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAPTER 3: JERSEY NUMBERS ===================== -->
+    <section class="section section--chapter section--dark" id="jersey-numbers">
+      <div class="section__content">
+        <p class="section__label">Chapter 3</p>
+        <h2>Jersey Numbers</h2>
+        <p class="section__metaphor">
+          <em>Before the match, every player gets a name and a number. Without it you can't call for the ball or find your teammate.</em>
+        </p>
+                <div class="section__image">
+          <img src="assets/locker-room.png" alt="Football locker room before a match" />
+        </div>
+        <p>
+          Variables are how you name things in JavaScript. <code>let</code>, <code>const</code>, <code>var</code> — each one tags a value so you can find it again. Without names, the pitch is chaos.
+        </p>
+        <p>
+          I finally understood why naming things matters. You're not just storing a value — you're making it findable. Unnamed things get lost on the pitch.
+        </p>
+        <div class="chapter__concept">
+          <span class="concept__tag">JS Concept</span>
+          <p>Variables: <code>let</code> · <code>const</code> · <code>var</code> — Give your data a jersey. Name it. Find it. Pass it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAPTER 4: READING THE PLAY ===================== -->
+    <section class="section section--chapter section--mid" id="reading-the-play">
+      <div class="section__content">
+        <p class="section__label">Chapter 4</p>
+        <h2>Reading the Play</h2>
+        <p class="section__metaphor">
+          <em>The coach signals from the sideline — if their defense pushes up, you go long. If they drop back, you play short. The game responds to what it reads.</em>
+        </p>
+        <p>
+          Conditionals are your tactical brain. <code>if</code> this is true, do that. <code>else</code>, do something different. The page stops being static — it reads the situation and makes decisions.
+        </p>
+        <p>
+          This is when the page stopped feeling rigid. It could make decisions. Something could be true or false and the whole game could change depending on it.
+        </p>
+        <div class="chapter__concept">
+          <span class="concept__tag">JS Concept</span>
+          <p>Conditionals · <code>classList</code> — Logic is tactics. Your code reads the game and responds in real time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAPTER 5: FINAL WHISTLE ===================== -->
+    <section class="section section--chapter section--final" id="final-whistle">
+      <div class="section__content">
+        <p class="section__label">Chapter 5</p>
+        <h2>Final Whistle</h2>
+        <p class="section__metaphor">
+          <em>The match ends. You walk off the pitch different than when you walked on. You know things now you didn't before — and some questions are still open.</em>
+        </p>
+        <p>
+          I started this not knowing how to make a page do anything. Now I understand that code is a system — every piece connects. But there's still so much more pitch to cover.
+        </p>
+        <p>
+          JavaScript isn't a wall you climb over once. It's a game you keep playing, getting sharper with every match. The fundamentals travel with you — the pitch just gets bigger.
+        </p>              
+        <div class="section__image">
+          <img src="assets/lights.png" alt="Bright stadium lights at night" />
+        </div>
+        <div class="chapter__concept">
+          <span class="concept__tag">What Shifted</span>
+          <p>Scoreboard flashes in, stadium lights dim slowly. The game is over — but the season is just starting.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,45 +1,251 @@
-@import "./variables.css";
+/* ==============================
+   BASE
+============================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 0;
   background: var(--color-surface-primary);
   color: var(--color-text-primary);
   font-family: var(--font-body);
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-body-lg);
 }
+
+code {
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-accent-highlight);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* ==============================
+   SECTION SHELL
+============================== */
 
 .section {
   min-height: 100svh;
   padding: var(--space-xl) var(--space-md);
+  display: flex;
+  align-items: center;
 }
 
 .section__content {
   width: min(72rem, 100%);
   margin-inline: auto;
+  max-width: 760px;
 }
 
+/* ==============================
+   SECTION BACKGROUNDS
+============================== */
 
-a {
-  transition: color 0.2s ease-out;
-}
-
-a:hover {
-  color: var(--color-accent);
-}
-
-a:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
-}
-
-body {
-  margin: 0;
-  font-family: var(--font-body);
-  font-size: var(--font-size-body-lg);
-  line-height: var(--line-height-body-lg);
-  color: var(--color-text-primary);
+.section--dark {
   background: var(--color-surface-primary);
 }
 
-section {
-  padding: 120px 0;
+.section--mid {
+  background: #16213e;
+}
+
+.section--final {
+  background: var(--color-surface-primary);
+}
+
+
+/* ==============================
+   TYPOGRAPHY
+============================== */
+
+.section__label {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-sm);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent-highlight);
+  margin-bottom: var(--space-sm);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  font-weight: 400;
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: 400;
+  margin-bottom: var(--space-md);
+}
+
+.section__metaphor {
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-body-lg);
+  color: rgba(245, 245, 240, 0.55);
+  border-left: 3px solid var(--color-accent-primary);
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+p {
+  margin-bottom: var(--space-md);
+}
+
+/* ==============================
+   CHAPTER CONCEPT BOX
+============================== */
+
+.chapter__concept {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.concept__tag {
+  font-size: var(--font-size-body-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-highlight);
+}
+
+/* ==============================
+   IMAGES
+============================== */
+
+.section__image {
+  margin-bottom: var(--space-lg);
+}
+
+.section__image img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  will-change: transform;
+}
+
+/* ==============================
+   HERO
+============================== */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero__layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: transform, filter;
+}
+
+.hero__bg {
+  background-image: url("../assets/stadium.png");
+  transform: scale(1.1);
+  filter: brightness(0.7);
+  z-index: 0;
+}
+
+.hero__mid {
+  background-image: url("../assets/tunnel.png");
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.hero__front {
+  background-image: url("../assets/grain.png");
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+  z-index: 2;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0.2) 0%,
+    rgba(0,0,0,0.6) 70%,
+    rgba(0,0,0,0.85) 100%
+  );
+  z-index: 2;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  pointer-events: none;
+}
+
+/* ==============================
+   CHAPTER 1 — STADIUM BACKGROUND
+   z-index: -1 puts it behind the pinned hero.
+   pinSpacing: true means GSAP adds a spacer above it,
+   so #kickoff naturally appears right after the hero unpins.
+   No margin-top needed — pinSpacing handles the offset.
+============================== */
+
+#kickoff {
+  background-image: url("../assets/stadium.png");
+  background-size: cover;
+  background-position: center 30%;
+  position: relative;
+  z-index: -1;
+}
+
+/* Dark overlay so text stays readable */
+#kickoff::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Lift content above the overlay */
+#kickoff .section__content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: clamp(2rem, 12vw, var(--font-size-h1));
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 9vw, var(--font-size-h2));
+    line-height: 1.15;
+  }
+
+  .section {
+    padding: var(--space-lg) var(--space-md);
+  }
 }
